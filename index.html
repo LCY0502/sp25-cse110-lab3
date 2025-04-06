@@ -117,7 +117,7 @@
     <hr>    
     <!-- 3 -->
     <h3>Squidward by Panda</h3>
-    <img alt="Squidward"src="./src/Squid.jpg" width = 200>
+    <img alt="Squidward" src="./src/Squid.jpg" width = 200>
     <p><b>Polar</b>: ...</p>
     <p><b>Teddy</b>: ...</p>
     <p><b>Grizzly</b>: This is stupid</p>
@@ -149,7 +149,7 @@
       <!-- End Text -->
 
       <!-- Radio -->
-      <label for="species"> Species:</label>
+      <span> Species:<span>
       <input type="radio" name="species" id="homosapien" value="homosapien">
       <label for="homosapien">Homosapien</label>
       <input type="radio" name="species" id="bear" value="bear">
@@ -157,33 +157,33 @@
       <!-- End Radio -->
       
       <!-- Checkbox -->
-      <label > PID (in Binary eg A1xxxxxxx->0x41??):</label><br>
+      <span> PID (in Binary eg A1xxxxxxx->0x41??):</pan><br>
         <!-- First Char -->
-        <label for="pid_letter">First Letter(ASICC):</label>
-        <label for="pid_letter">Most Significant Bit</label>
-        <input type="checkbox" name="pid_letter" value="b7">
-        <input type="checkbox" name="pid_letter" value="b6">
-        <input type="checkbox" name="pid_letter" value="b5">
-        <input type="checkbox" name="pid_letter" value="b4">
-        <input type="checkbox" name="pid_letter" value="b3">
-        <input type="checkbox" name="pid_letter" value="b2">
-        <input type="checkbox" name="pid_letter" value="b1">
-        <input type="checkbox" name="pid_letter" value="b0">
-        <label >Least Significant Bit</label><br>
+        <span>First Letter(ASICC):</span>
+        <span>Most Significant Bit</span>
+        <input type="checkbox" id="pid_letter_b7" name="pid_letter_b7" value="b7">
+        <input type="checkbox" id="pid_letter_b6" name="pid_letter_b6" value="b6">
+        <input type="checkbox" id="pid_letter_b5" name="pid_letter_b5" value="b5">
+        <input type="checkbox" id="pid_letter_b4" name="pid_letter_b4" value="b4">
+        <input type="checkbox" id="pid_letter_b3" name="pid_letter_b3" value="b3">
+        <input type="checkbox" id="pid_letter_b2" name="pid_letter_b2" value="b2">
+        <input type="checkbox" id="pid_letter_b1" name="pid_letter_b1" value="b1">
+        <input type="checkbox" id="pid_letter_b0" name="pid_letter_b0" value="b0">
+        <span>Least Significant Bit</span>
         <!-- End First Char -->
         <!-- Second Int -->
         <label for="pid_num">Number(Unsigned):</label>
-        <label for="pid_num">Most Significant Bit</label>
-        <input type="checkbox" name="pid_num" value="b7">
-        <input type="checkbox" name="pid_num" value="b6">
-        <input type="checkbox" name="pid_num" value="b5">
-        <input type="checkbox" name="pid_num" value="b4">
-        <input type="checkbox" name="pid_num" value="b3">
-        <input type="checkbox" name="pid_num" value="b2">
-        <input type="checkbox" name="pid_num" value="b1">
-        <input type="checkbox" name="pid_num" value="b0">
-        <label for="pid_num">Least Significant Bit</label><br>
-        <label for="pid_num"> (check means 1 and uncheck means 0)</label><br>
+        <span>Most Significant Bit</span>
+        <input type="checkbox" id="pid_num_b7" name="pid_num_b7" value="b7">
+        <input type="checkbox" id="pid_num_b6" name="pid_num_b6" value="b6">
+        <input type="checkbox" id="pid_num_b5" name="pid_num_b5" value="b5">
+        <input type="checkbox" id="pid_num_b4" name="pid_num_b4" value="b4">
+        <input type="checkbox" id="pid_num_b3" name="pid_num_b3" value="b3">
+        <input type="checkbox" id="pid_num_b2" name="pid_num_b2" value="b2">
+        <input type="checkbox" id="pid_num_b1" name="pid_num_b1" value="b1">
+        <input type="checkbox" id="pid_num_b0" name="pid_num_b0" value="b0">
+        <span>Least Significant Bit</span>
+        <p> (check means 1 and uncheck means 0)</p><br>
 
       <!-- End Checkbox -->
     </fieldset>
@@ -194,9 +194,9 @@
       <label for="best_ideas">Pick the best one to work on:</label>
       
       <select id="best_ideas">
-      <option vlaue="2000">FishGrinder 2000</option>          
-      <option vlaue="Choco">Le Fishe Au Chocolat</option>          
-      <option vlaue="Squid">Squidward</option>          
+      <option value="2000">FishGrinder 2000</option>          
+      <option value="Choco">Le Fishe Au Chocolat</option>          
+      <option value="Squid">Squidward</option>          
       </select>
       <br>
 
