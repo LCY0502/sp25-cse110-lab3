@@ -103,18 +103,28 @@
           <source src="./src/Le Fishe au chocolat! Epic and lifechanging videoversion.mp4" type ="video/mp4">
           "Le Fishe au chocolat" on Youtube
         </video>
-        
-        <audio controls>
-          <source src="./src/Le Fishe au chocolat! Epic and lifechanging videoversion.mp3">
-          Fancy music from "Le Fishe au chocolat"
-        </audio>
+        <p><b>Teddy</b>: Choclat is also my favorite</p>
+        <p>
+          <b>Polar</b>: Just Listen
+          <audio controls>
+            <source src="./src/Le Fishe au chocolat! Epic and lifechanging videoversion.mp3">
+            Fancy music from "Le Fishe au chocolat"
+          </audio>
+        </p>
+        <p><b>Grizzly</b>: ... </p>
+        <p><b>Panda</b>: I eat bamboo</p>
       </section>
       <hr>
 
       <!-----------3--------------->
       <hr>
       <section id = "squid">
-        <h3>Squid</h3>
+        <h3>Squidward by Panda</h3>
+        <img src="./src/Squid.jpg" width = 200>
+        <p><b>Polar</b>: ...</p>
+        <p><b>Teddy</b>: ...</p>
+        <p><b>Grizzly</b>: This is stupid</p>
+        <p><b>Panda</b>: I eat bamboo</p>
       </section>
     </main>
     <hr>
@@ -122,16 +132,99 @@
 
     <!-- Pt3 Form -->
     <header id = "sum">
-      <h2>Summary</h2>
+      <h2>Summary Form</h2>
     </header>
-    <hr>
-    <!--  -->
+    <!-- Form -->
+    <form id="Reflection Form">
+      <!-- Personal info section -->
+      <fieldset id="person">
+        <legend>Personal Info</legend>
+        <!-- Input -->
+        <!-- Date -->
+        <label for="Date">Date</label>
+        <input type="date"><br>
+         
+        <!-- Text -->
+        <label for="fname">first name:</label>
+        <input type="text"><br>
+        <label for="lname">last name:</label>
+        <input type="text"><br>
+        <!-- End Text -->
+
+        <!-- Radio -->
+        <label for="species"> Species:</label>
+        <input type="radio" name="species" value="homosapien">
+        <label for="homosapien">Homosapien</label>
+        <input type="radio" name="species" value="bear">
+        <label for="bear">Bear</label><br>
+        <!-- End Radio -->
+        
+        <!-- Checkbox -->
+        <label for="pid"> PID (in Binary eg A1xxxxxxx->0x41??):</label><br>
+          <!-- First Char -->
+          <label for="char">First Letter(ASICC):</label>
+          <label for="char msb">Most Significant Bit</label>
+          <input type="checkbox" name="letter"value="b7">
+          <input type="checkbox" name="letter"value="b6">
+          <input type="checkbox" name="letter"value="b5">
+          <input type="checkbox" name="letter"value="b4">
+          <input type="checkbox" name="letter"value="b3">
+          <input type="checkbox" name="letter"value="b2">
+          <input type="checkbox" name="letter"value="b1">
+          <input type="checkbox" name="letter"value="b0">
+          <label for="fchar msb">Least Significant Bit</label><br>
+          <!-- End First Char -->
+          <!-- Second Int -->
+          <label for="int">Number(Unsigned):</label>
+          <label for="int msb">Most Significant Bit</label>
+          <input type="checkbox" name="num"value="b7">
+          <input type="checkbox" name="num"value="b6">
+          <input type="checkbox" name="num"value="b5">
+          <input type="checkbox" name="num"value="b4">
+          <input type="checkbox" name="num"value="b3">
+          <input type="checkbox" name="num"value="b2">
+          <input type="checkbox" name="num"value="b1">
+          <input type="checkbox" name="num"value="b0">
+          <label for="int msb">Least Significant Bit</label><br>
+          <label for="pid instruction"> (check means 1 and uncheck means 0)</label><br>
+
+        <!-- End Checkbox -->
+      </fieldset>
+      
+      <!-- Feedback -->
+      <fieldset id="feedback">
+        <legend>feedback</legend>
+        <label for="best ideas">Pick the best one to work on:</label>
+        
+        <select id="best ideas">
+        <option vlaue="2000">FishGrinder 2000</option>          
+        <option vlaue="Choco">Le Fishe Au Chocolat</option>          
+        <option vlaue="Squid">Squidward</option>          
+        </select>
+        <br>
+
+        <label for="extra"> What do you think how about our team?</label>
+        <textarea id="extra" name="extra" rows="20" cols="80"></textarea>
+        
+        <label for="last"> Any last words?</label>
+        <input list="LastWords" name="LastWords">
+        <datalist id="LastWords">
+          <option value="Hello">
+          <option value="Howdy">
+          <option value="Whatsup">
+          <option value="No? How dare you say no.">
+        </datalist> 
+      </fieldset>
+      <!-- End of Feedback -->
+      <button type="button">Submit</button>
+    </form>
+    <!--End of Form -->
   </main>
   <!--End of Main -->
 
   <!-- Footer -->
   <footer>
-      
+      <span>Foot Note &#129462;</span>
   </footer>
   <!-- End of Footer -->
   </body>
