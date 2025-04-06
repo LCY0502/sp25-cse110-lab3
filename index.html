@@ -57,8 +57,8 @@
     
   </header>
   <br>    
-  <!-- Content of Pt1-->
-  <sectiont id = "checkin">
+
+  <section id = "checkin">
     <h3><i>Check-in:</i></h3>
     <span>Team Members:</span>
     <ol>
@@ -78,24 +78,26 @@
     </ul>
   </section>
   <hr>
-  <!-- End of Content of Pt1 -->
+  <!-- End of Pt1 -->
 
   <!-- Pt2 : Link/Video/Picute/Audio -->
   <header id = "ideas">
     <h2>Idea BrainStorm</h2>     
   </header>
     
-  <!-- Main Pt2 -->
+  <!-- Main -->
   <main>
     <!-- 1 -->
+    <section id="fish_ginder_2000">
     <h3>FishGrinder 2000 by Grizzly</h3>
-    <p><img src = "https://i.ytimg.com/vi/aC4L2IKxWag/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDx9HpBlezlgjO89_dZ_4kE0Xtvqw" width="500"></p>
+    <p><img alt="fish grinder 2000" src = "https://i.ytimg.com/vi/aC4L2IKxWag/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDx9HpBlezlgjO89_dZ_4kE0Xtvqw" width="500"></p>
     <p><b>Grizzly</b>: People should grind up all the fish before consumption</p>
     <p><b>Polar</b>: I can grind fish with my teeth</p>
     <p><b>Panda</b>: I eat bamboo</p>
     <p><b>Teddy</b>: I eat cotton candy</p>
     <hr>
-  
+    </section>
+
     <!-- 2 -->
     <h3>Le Fishe Au Chocolat by Polar and Teddy</h3>
     <video width="320" height="240" controls>
@@ -115,21 +117,20 @@
     <hr>    
     <!-- 3 -->
     <h3>Squidward by Panda</h3>
-    <img src="./src/Squid.jpg" width = 200>
+    <img alt="Squidward"src="./src/Squid.jpg" width = 200>
     <p><b>Polar</b>: ...</p>
     <p><b>Teddy</b>: ...</p>
     <p><b>Grizzly</b>: This is stupid</p>
     <p><b>Panda</b>: I eat bamboo</p>
     <hr>
   </main>
-  <!-- End of main -->
+  <!-- End of Main& Pt2 -->
 
   <!-- Pt3 Form -->
   <header id = "sum">
     <h2>Summary Form</h2>
   </header>
-  
-  <!-- Form -->
+
   <form id="reflection_form">
     <!-- Personal info section -->
     <fieldset id="person">
@@ -137,52 +138,52 @@
       <!-- Input -->
       <!-- Date -->
       <label for="date">Date</label>
-      <input type="date"><br>
+      <input type="date" id="date"><br>
         <!-- EndDate -->
 
       <!-- Text -->
       <label for="fname">first name:</label>
-      <input type="text"><br>
+      <input type="text" name="name" id="fname"><br>
       <label for="lname">last name:</label>
-      <input type="text"><br>
+      <input type="text" name="name" id="lname"><br>
       <!-- End Text -->
 
       <!-- Radio -->
       <label for="species"> Species:</label>
-      <input type="radio" name="species" value="homosapien">
+      <input type="radio" name="species" id="homosapien" value="homosapien">
       <label for="homosapien">Homosapien</label>
-      <input type="radio" name="species" value="bear">
+      <input type="radio" name="species" id="bear" value="bear">
       <label for="bear">Bear</label><br>
       <!-- End Radio -->
       
       <!-- Checkbox -->
-      <label for="pid"> PID (in Binary eg A1xxxxxxx->0x41??):</label><br>
+      <label > PID (in Binary eg A1xxxxxxx->0x41??):</label><br>
         <!-- First Char -->
-        <label for="char">First Letter(ASICC):</label>
-        <label for="letter_msb">Most Significant Bit</label>
-        <input type="checkbox" name="letter" value="b7">
-        <input type="checkbox" name="letter" value="b6">
-        <input type="checkbox" name="letter" value="b5">
-        <input type="checkbox" name="letter" value="b4">
-        <input type="checkbox" name="letter" value="b3">
-        <input type="checkbox" name="letter" value="b2">
-        <input type="checkbox" name="letter" value="b1">
-        <input type="checkbox" name="letter" value="b0">
-        <label for="letter_lsb">Least Significant Bit</label><br>
+        <label for="pid_letter">First Letter(ASICC):</label>
+        <label for="pid_letter">Most Significant Bit</label>
+        <input type="checkbox" name="pid_letter" value="b7">
+        <input type="checkbox" name="pid_letter" value="b6">
+        <input type="checkbox" name="pid_letter" value="b5">
+        <input type="checkbox" name="pid_letter" value="b4">
+        <input type="checkbox" name="pid_letter" value="b3">
+        <input type="checkbox" name="pid_letter" value="b2">
+        <input type="checkbox" name="pid_letter" value="b1">
+        <input type="checkbox" name="pid_letter" value="b0">
+        <label >Least Significant Bit</label><br>
         <!-- End First Char -->
         <!-- Second Int -->
-        <label for="int">Number(Unsigned):</label>
-        <label for="int_msb">Most Significant Bit</label>
-        <input type="checkbox" name="num" value="b7">
-        <input type="checkbox" name="num" value="b6">
-        <input type="checkbox" name="num" value="b5">
-        <input type="checkbox" name="num" value="b4">
-        <input type="checkbox" name="num" value="b3">
-        <input type="checkbox" name="num" value="b2">
-        <input type="checkbox" name="num" value="b1">
-        <input type="checkbox" name="num" value="b0">
-        <label for="int_msb">Least Significant Bit</label><br>
-        <label for="pid_instruction"> (check means 1 and uncheck means 0)</label><br>
+        <label for="pid_num">Number(Unsigned):</label>
+        <label for="pid_num">Most Significant Bit</label>
+        <input type="checkbox" name="pid_num" value="b7">
+        <input type="checkbox" name="pid_num" value="b6">
+        <input type="checkbox" name="pid_num" value="b5">
+        <input type="checkbox" name="pid_num" value="b4">
+        <input type="checkbox" name="pid_num" value="b3">
+        <input type="checkbox" name="pid_num" value="b2">
+        <input type="checkbox" name="pid_num" value="b1">
+        <input type="checkbox" name="pid_num" value="b0">
+        <label for="pid_num">Least Significant Bit</label><br>
+        <label for="pid_num"> (check means 1 and uncheck means 0)</label><br>
 
       <!-- End Checkbox -->
     </fieldset>
@@ -201,15 +202,17 @@
 
       <label for="extra"> What do you think how about our team?</label>
       <textarea id="extra" name="extra" rows="20" cols="80"></textarea>
+      <br>
       
       <label for="last_words"> Any last words?</label>
-      <input list="last_words" name="last_words">
+      <input list="last_words" id ="last_words" name="last_words">
       <datalist id="last_words">
         <option value="Hello">
         <option value="Hasta la vistaa">
         <option value="Whatsup">
         <option value="No? How dare you say no.">
       </datalist> 
+
     </fieldset>
     <!-- End of Feedback -->
     <button type="button">Submit</button>
@@ -222,4 +225,5 @@
   </footer>
   <!-- End of Footer -->
   </body>
+
 </html>
