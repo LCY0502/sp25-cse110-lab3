@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-[Meeting Minutess](https://lcy0502.github.io/CSE110_Lab2_Starter/)
+# Lab # 3
+[Meeting Minutess](https://lcy0502.github.io/sp25-cse110-lab3/)
