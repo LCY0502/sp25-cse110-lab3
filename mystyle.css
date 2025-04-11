@@ -1,0 +1,27 @@
+
+:root
+{
+  --background_color:black;
+}
+body{
+  color: rgb(255, 255, 255);
+  background-color: var(--background_color,black);
+}
+
+h1{
+  color: #f00;
+}
+
+h2{
+  color: hsl(100,77%, 77%);
+
+}
+
+h3{
+  color:color(srgb 1 0.2 0.3);
+}
+
+#fish_grinder_2000{
+  /* color: orange; */
+  color: color-mix(in srgb, var(--background_color, black) 1%, orange 99%);
+}
