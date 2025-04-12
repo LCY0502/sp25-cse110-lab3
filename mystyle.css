@@ -3,8 +3,14 @@
 {
   --background_color:black;
 }
+
+.dialog{
+  max-width: 1000px;
+  max-height: 1000px;
+}
+
 body{
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: var(--background_color,black);
 }
 
@@ -24,6 +30,8 @@ h3{
 #fish_grinder_2000{
   /* color: orange; */
   color: color-mix(in srgb, var(--background_color, black) 1%, orange 99%);
+  height: 100000px;
+  width:  10000000px;
 }
 
 #overview{
