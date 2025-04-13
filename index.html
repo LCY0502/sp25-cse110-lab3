@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./src/icons8-bear-16.png">
     <link rel="stylesheet" href="./mystyle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   </head>
   <!-- End Header -->
 
@@ -15,7 +19,7 @@
   <header>
     <h1>First Meeting</h1>
     <div id="date"><strong>Date</strong>: 5th-April-2025</div>
-    <span id="span-1">This is a span</span>
+    <span id="span-1" class="narrow">This is a span</span>
     <nav>
       <ul>
         <li><a href="#overview">Overview</a>
@@ -35,6 +39,8 @@
       </ul>
     </nav>
   </header>
+  <div id="sticky-box" class="narrow">Sitcky box/hover to show color</div>
+  <div id="absolute-box" class="narrow">click me</div>
   <hr>
   <!-- End Page Header -->
 
@@ -89,9 +95,19 @@
     
   <!-- Main -->
   <main>
+    <div class="grid narrow">
+      This is a big grid;
+      <div class="grid_item">1</div>
+      <div class="grid_item">2</div>
+      <div class="grid_item">3</div>
+      <div class="grid_item">4</div>
+      <div class="grid_item">5</div>
+      <div class="grid_item">6</div>
+      <div class="grid_item">7</div>
+    </div>
     <!-- 1 -->
-    <h3 >FishGrinder 2000 by Grizzly</h3>
     <section id="fish_grinder_2000" class = "dialog">
+    <h3 >FishGrinder 2000 by Grizzly</h3>
     <p><img alt="fish grinder 2000" src = "https://i.ytimg.com/vi/aC4L2IKxWag/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDx9HpBlezlgjO89_dZ_4kE0Xtvqw" width="500"></p>
     <p><b>Grizzly</b>: People should grind up all the fish before consumption</p>
     <p><b>Polar</b>: I can grind fish with my teeth</p>
@@ -101,12 +117,12 @@
     </section>
 
     <!-- 2 -->
-    <video width="320" height="240" controls >
+    <section id="fish" class = "dialog">
     <h3>Le Fishe Au Chocolat by Polar and Teddy</h3>
-      <source src="./src/Le%20Fishe%20au%20chocolat!%20Epic%20and%20lifechanging%20videoversion.mp4" type ="video/mp4">
-      "Le Fishe au chocolat" on Youtube
-    </video>
-    <section class = "dialog">
+      <video width="320" height="240" controls >
+        <source src="./src/Le%20Fishe%20au%20chocolat!%20Epic%20and%20lifechanging%20videoversion.mp4" type ="video/mp4">
+        "Le Fishe au chocolat" on Youtube
+      </video>
       <p><b>Teddy</b>: Choclat is also my favorite</p>
       <p><b>Polar</b>: Just Listen
         <audio controls>
@@ -120,9 +136,9 @@
 
     <hr>    
     <!-- 3 -->
+    <section id="squid" class="dialog">
     <h3>Squidward by Panda</h3>
     <img alt="Squidward" src="./src/Squid.jpg" width = "200">
-    <section class="dialog">
       <p><b>Polar</b>: ...</p>
       <p><b>Teddy</b>: ...</p>
       <p><b>Grizzly</b>: This is stupid</p>
@@ -144,7 +160,7 @@
       <!-- Input -->
       <!-- Date -->
       <label for="date">Date</label>
-      <input type="date" id="date"><br>
+      <input type="date" id="formdate"><br>
         <!-- EndDate -->
 
       <!-- Text -->
