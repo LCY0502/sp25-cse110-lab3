@@ -4,14 +4,55 @@
   --background_color:black;
 } */
 
-/* All <a> element withe a href */
+/* Attribute selector : All <a> element withe a href */
 a[href]:hover{
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 
-/* Multiple element*/
+/* Descendant Combinator : list item within list item */
+li li{
+  background-color: #3f87a6;
+}
+/* Child Combinator: li which is a child of ol */
+ol > li{
+  background-color: chartreuse;
+}
+/* Subsequent - sibling Combinator : all <span> that are next sibilings of a <p>*/
+p ~ span{
+  color: aqua;
+}
+/* Next Sibling Combinator: the first span element immediately after p  */
+p + span{
+  background-color: yellow;
+}
+/* :has(relative selector) pseudo-class
+  Select <p> which has a span immediately follows
+*/
+p:has(+ span)
+{
+  background-color: #f00;
+}
+
+/* Selecctor List: all p and a*/
 p, a{
   color: darkkhaki;
+}
+/* element.class: All span that is also a class narrow */
+span.narrow
+{
+  background-color: aquamarine;
+}
+/* Nested Selector:  */
+#members{
+  color: blue;
+  
+  & > li {
+    text-decoration: underline wavy black;
+    background-color: tomato;
+    &:hover{
+      background-color: wheat;
+    }
+  }
 }
 /* Font */
 .shadows-into-light-regular {
@@ -107,10 +148,7 @@ main{
 }
 
 /* position sticky */
-#sticky-box:hover{
-  border: green solid 50px;
 
-}
 #sticky-box{
   position: sticky;
   top: 100px;
@@ -119,6 +157,11 @@ main{
   width: 100px;
   height: 100px;
   text-align:  center;
+
+  &:hover{
+    border: green solid 50px;
+  
+  }
 }
 
 /* position aboslute */
@@ -183,9 +226,14 @@ padding: 50px 0px 10px 50px;
   margin: 100px 5px 50px 50px;
   padding: 50px 50px 50px 50px;
 }
+
 }
 /* End of Border */
 /* Dont display if width smaller than 1000pxx */
-.narrow{
-  display: none;
+
+@media(width< 1000px){
+  .narrow{
+    display: none;
+  }
+
 }
