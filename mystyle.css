@@ -14,19 +14,52 @@ body{
   background-color: var(--background_color,black);
 }
 
+body:active{
+  color: black;
+  background-color: white;
+}
+
 h1{
   color: #f00;
 }
 
 h2{
   color: hsl(100,77%, 77%);
-
 }
+
 
 h3{
   color:color(srgb 1 0.2 0.3);
 }
 
+
+/* position sticky */
+#sticky-box:hover{
+  border: green solid 50px;
+
+}
+#sticky-box{
+  position: sticky;
+  top: 100px;
+  border: yellow solid 50px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  text-align:  center;
+}
+
+/* position aboslute */
+#absolute-box:active{
+  position: absolute;
+  top:550px;
+  left: 500px;
+  margin: auto;
+  border: green solid 10px;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
 #fish_grinder_2000{
   /* color: orange; */
   color: color-mix(in srgb, var(--background_color, black) 1%, orange 99%);
