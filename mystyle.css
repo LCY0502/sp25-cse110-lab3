@@ -32,6 +32,56 @@ h3{
   color:color(srgb 1 0.2 0.3);
 }
 
+/* Flex */
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+#squid{
+  order: 1;
+  flex-grow: 1;
+}
+#fish{
+  flex-grow: 1;
+  order: 2;
+}
+#fish_grinder_2000{
+  /* color: orange; */
+  color: color-mix(in srgb, var(--background_color, black) 1%, orange 99%);
+  /* max-width/height protection */
+  height: 100000px;
+  width:  10000000px;
+}
+/* End Flex */
+
+/* Grid */
+.grid
+{
+  --row: 300px;
+  --col: 300px;
+  display: grid;
+  grid-template-columns: 0.1fr repeat(2, var(--col));
+  grid-template-rows: 1fr repeat(2,var(--row));
+  grid-gap: 1mm;
+}
+
+.grid_item
+{
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+  border: 5px solid pink;
+  place-self: center;
+}
+.grid_item:hover{
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+  border: 5px solid greenyellow;
+  place-self: center; 
+}
 
 /* position sticky */
 #sticky-box:hover{
@@ -59,12 +109,6 @@ h3{
   width: 100px;
   height: 100px;
   text-align: center;
-}
-#fish_grinder_2000{
-  /* color: orange; */
-  color: color-mix(in srgb, var(--background_color, black) 1%, orange 99%);
-  height: 100000px;
-  width:  10000000px;
 }
 
 #overview{
