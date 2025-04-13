@@ -4,6 +4,16 @@
   --background_color:black;
 } */
 
+/* All <a> element withe a href */
+a[href]:hover{
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+/* Multiple element*/
+p, a{
+  color: darkkhaki;
+}
+/* Font */
 .shadows-into-light-regular {
   font-family: "Shadows Into Light", cursive;
   font-weight: 400;
@@ -127,7 +137,7 @@ main{
 /* Border playing */
 @media (width >= 1000px) {
   
-  #overview{
+#overview{
     /* Box Stuff */
     width: 500px;
     border: 10px solid palevioletred;
