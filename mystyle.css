@@ -4,6 +4,12 @@
   --background_color:black;
 } */
 
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 *{
   --background_color:black;
 }
@@ -14,6 +20,7 @@
 }
 /* Body */
 body{
+  font-family: "Shadows Into Light";
   color: white;
   background-color: var(--background_color,black);
 }
