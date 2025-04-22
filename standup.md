@@ -21,7 +21,13 @@ Names: participant1 ...
   - Summary:
 - etc
 
-## Progress and Tasks
+## Updates (Each team member answers the some standup questions)
+
+### [Team Member Name]
+- What did you do yesterday?
+- What will you do today/before next meeting?
+
+### Progress and Tasks
 |Participants| Things changes since last meeting| 
 |:-------|:----------|
 | Participants1 | e.g. What I did after last meeting
